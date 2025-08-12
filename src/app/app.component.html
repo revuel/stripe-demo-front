@@ -1,0 +1,11 @@
+<div class="card">
+  <h2>Producto demo Angular</h2>
+  <p>Precio: $50.00 USD</p>
+
+  <div id="card-element" class="card-element"></div>
+  <div class="card-errors" *ngIf="cardErrors">{{ cardErrors }}</div>
+
+  <button (click)="pay()" [disabled]="loading">
+    {{ loading ? 'Procesando...' : 'Pagar' }}
+  </button>
+</div>
